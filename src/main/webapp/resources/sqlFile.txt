@@ -1,0 +1,9 @@
+create table board(
+bno int auto_increment,
+title varchar(200) not null,
+writer varchar(200) not null,
+content text,
+isDel varchar(10) default 'N',
+regdate datetime default now(),
+modDate datetime default now(),
+primary key(bno));
